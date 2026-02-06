@@ -1,0 +1,142 @@
+/* --- Reset do Fundo + centro superior --- */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+
+  display: flex;
+  justify-content: center;   /* Centraliza horizontalmente */
+  align-items: flex-start;   /* Fica no topo */
+}
+
+/* --- Root --- */
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* --- Container principal --- */
+.container {
+  width: calc(100% - 40px);  /* Espaço de 20px em cada lado */
+  max-width: 1400px;
+  margin-top: 20px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Ajustes Internos --- */
+h1 {
+  font-size: 24px;
+  margin-top: 0;
+  color: #34495e;
+  text-align: center;
+}
+
+.acoes-topo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.busca {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.btn-novo {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* --- Tabela --- */
+.tabela-container {
+  width: 100%;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th {
+  background: #f8f9fa;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.btn-edit,
+.btn-del {
+  padding: 5px 8px;
+  font-size: 12px;
+}
+
+/* --- Janela Modal (Aparecer por cima de tudo) --- */
+.modal-fundo {
+  position: fixed;    /* Fixa na tela inteira */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fundo escurecido semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centraliza o formulário no meio da tela */
+  z-index: 9999;      /* Garante que fique acima de qualquer outro elemento */
+}
+
+.modal-caixa {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;   /* Largura máxima do formulário */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Ajuste dos inputs dentro do modal para ficarem um abaixo do outro */
+.modal-caixa form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-caixa input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+.botoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}

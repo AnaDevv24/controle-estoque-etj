@@ -10,4 +10,4 @@ const BarraBusca = ({ valor, aoMudar }) => (
   />
 );
 
-export default BarraBusca;S
+export default BarraBusca;

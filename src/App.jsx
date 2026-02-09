@@ -5,19 +5,19 @@ import BarraBusca from './components/BarraBusca';
 import './App.css';
 
 function App() {
-  // Estados: onde guardamos os dados que mudam na tela
+  // Armazenam os dados 
   const [produtos, setProdutos] = useState([]);
   const [termoBusca, setTermoBusca] = useState('');
   const [exibirModal, setExibirModal] = useState(false);
   const [produtoParaEditar, setProdutoParaEditar] = useState(null);
 
-  // Carrega os dados salvos no navegador quando o app abre
+  // Carrega os dados salvos 
   useEffect(() => {
     const dadosSalvos = localStorage.getItem('estoque_dados');
     if (dadosSalvos) {
       setProdutos(JSON.parse(dadosSalvos));
     } else {
-      // Dados iniciais caso o "banco" esteja vazio
+      // Dados iniciais 
       setProdutos([
         { id: 1, nome: 'Exemplo Produto', quantidade: 10, categoria: 'Geral', preco: 50 }
       ]);
@@ -71,7 +71,7 @@ function App() {
       <TabelaProdutos 
         lista={produtosFiltrados} 
         aoExcluir={excluirProduto} 
-        aoEditar={abrirModalParaEditar} S
+        aoEditar={abrirModalParaEditar} 
       />
 
       {exibirModal && (

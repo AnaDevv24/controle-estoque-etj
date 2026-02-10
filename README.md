@@ -36,6 +36,7 @@ Siga os passos abaixo no terminal para executar o projeto em sua máquina
     npm install
 
 4. **Execute o codigo**
+
     npm run dev
 
 5. **Acesse o link que aparecerá no terminal**

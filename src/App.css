@@ -1,14 +1,15 @@
-/* --- Reset do Fundo + centro superior --- */
+/* Reset do Fundo + centro superior  */
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  background-color: #f0f2f5;
-
+  background-color: #e5e7eb; 
   display: flex;
   justify-content: center;   
   align-items: flex-start;   
+  font-family: Arial, sans-serif;
+  color: #1a1a1a; 
 }
 
 /* --- Root --- */
@@ -26,7 +27,7 @@ html, body {
   background: white;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.15);
   display: flex;
   flex-direction: column;
 }
@@ -35,8 +36,9 @@ html, body {
 h1 {
   font-size: 44px;
   margin-top: 0;
-  color: #34495e;
+  color: #2c3e50; 
   text-align: center;
+  font-weight: bold;
 }
 
 .acoes-topo {
@@ -47,25 +49,29 @@ h1 {
 
 .busca {
   flex: 1;
-  padding: 10px;
-  border: 1px solid #ddd;
+  padding: 12px;
+  border: 2px solid #94a3b8; 
   border-radius: 8px;
+  font-size: 16px;
+  color: #000000;
 }
 
 .btn-novo {
-  background-color: #27ae60;
+  background-color: #1e8449; 
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;
   white-space: nowrap;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 /* --- Tabela --- */
 .tabela-container {
   width: 100%;
-  border: 1px solid #eee;
+  border: 2px solid #cbd5e1;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -73,34 +79,52 @@ h1 {
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 14px;
+  font-size: 15px;
+  color: #000000;
 }
 
 th {
-  background: #f8f9fa;
-  padding: 10px;
+  background: #f1f5f9; 
+  padding: 12px;
   text-align: left;
+  color: #1e293b;
+  border-bottom: 2px solid #cbd5e1;
+  font-weight: bold;
 }
 
 td {
-  padding: 10px;
-  border-bottom: 1px solid #eee;
+  padding: 12px;
+  border-bottom: 1px solid #cbd5e1; 
 }
 
-.btn-edit,
+/* Botões de Ação com cores sólidas */
+.btn-edit {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
 .btn-del {
-  padding: 5px 8px;
-  font-size: 12px;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 
-/* --- Janela Modal (Aparecer por cima de tudo) --- */
+/* --- Janela Modal --- */
 .modal-fundo {
   position: fixed;    
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.7); 
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -111,32 +135,20 @@ td {
   background: white;
   padding: 30px;
   border-radius: 15px;
-  width: 100%;
+  width: 90%;
   max-width: 500px;   
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-
-.modal-caixa form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
 .modal-caixa input {
   padding: 12px;
-  border: 1px solid #ddd;
+  border: 2px solid #94a3b8; 
   border-radius: 8px;
   width: 100%;
   box-sizing: border-box; 
-}
-
-.botoes {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-top: 10px;
+  font-size: 16px;
+  color: #000000;
 }

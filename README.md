@@ -1,18 +1,44 @@
-# React + Vite
+# LogiStock - Controle de Estoque Inteligente
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema de gerenciamento de estoque desenvolvido em React para facilitar o controle de entrada, saída e busca de mercadorias.
 
-Currently, two official plugins are available:
+# Critérios Atendidos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Componentização: Interface dividida em componentes reutilizáveis (Tabela, Modal, Busca).
 
-## React Compiler
+- Persistência : Utilização de `localStorage` para manter os dados salvos no navegador.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- *Busca Funcional*: Filtro de produtos por nome.
 
-Note: This will impact Vite dev & build performances.
+- Responsividade: Layout adaptável para diferentes tamanhos de tela.
 
-## Expanding the ESLint configuration
+# Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js (Vite)
+- CSS (Design Responsivo)
+- JavaScript (ES6+)
+- LocalStorage para persistência de dados
+
+# Como Rodar o Projeto Localmente
+
+Siga os passos abaixo no terminal para executar o projeto em sua máquina 
+
+1. **Clonar o repositório:**
+
+   git clone https://github.com/AnaDevv24/controle-estoque-etj.git
+
+2. **Entre na pasta do projeto**
+
+    cd controle-estoque-etj
+
+3. **Instale as dependecias**
+
+    npm install
+
+4. **Execute o codigo**
+    npm run dev
+
+5. **Acesse o link que aparecerá no terminal**
+
+# Link para o Projeto Online
+Clique aqui para acessar o LogiStock: (https://anadevv24.github.io/controle-estoque-etj/)
